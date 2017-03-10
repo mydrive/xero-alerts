@@ -7,4 +7,4 @@ aws s3 cp --region eu-west-1 s3://${CONFIG_BUCKET}/config/xero/privatekey.pem pr
 chmod 600 privatekey.pem
 aws s3 cp --region eu-west-1 s3://${CONFIG_BUCKET}/config/xero/env.sh .
 . ./env.sh
-./xero-alert.rb --status=AUTHORISED
+./xero-alert.rb
